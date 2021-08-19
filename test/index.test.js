@@ -19,5 +19,9 @@ describe('GIVEN the neutralizeThreat function', () => {
     test('THEN "LL" to be returned when "LOL" is passed', () => {
       expect(neutralizeThreat('LOL')).toBe('LL');
     });
+
+    test('THEN "ll" to be returned when "lol" is passed', () => {
+      expect(neutralizeThreat('lol')).toBe('ll');
+    });
   });
 });

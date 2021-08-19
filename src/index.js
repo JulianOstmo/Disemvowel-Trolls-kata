@@ -7,7 +7,7 @@ const neutralizeThreat = (input) => {
     return input;
   }
 
-  return input.replace('O', '');
+  return input.replace(/O/i, '');
 };
 
 module.exports = {
