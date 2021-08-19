@@ -10,7 +10,7 @@ Note: for this kata y isn't considered a vowel.
 
 # Pomodoro 1
 🚧 guards:
-  - input is not a string throw error
+  🚧 input is not a string throw error
   - input is an empty string
 - WHEN input is "LOL"
   - THEN expect "LL" to be returned
