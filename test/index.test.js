@@ -14,4 +14,10 @@ describe('GIVEN the neutralizeThreat function', () => {
       expect(neutralizeThreat('')).toBe('');
     });
   });
+
+  describe('WHEN the input is a valid string', () => {
+    test('THEN "LL" to be returned when "LOL" is passed', () => {
+      expect(neutralizeThreat('LOL')).toBe('LL');
+    });
+  });
 });
