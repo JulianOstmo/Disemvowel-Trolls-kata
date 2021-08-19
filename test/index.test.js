@@ -27,5 +27,11 @@ describe('GIVEN the neutralizeThreat function', () => {
     test('THEN "lsrs LL" should be returned when "losers LOL" passed', () => {
       expect(neutralizeThreat('losers LOL')).toBe('lsrs LL');
     });
+
+    test('THEN "Ths wbst s fr lsrs LL!" should be returned when "This website is for losers LOL!"', () => {
+      expect(neutralizeThreat('This website is for losers LOL!')).toBe(
+        'Ths wbst s fr lsrs LL!',
+      );
+    });
   });
 });

@@ -12,9 +12,14 @@ Note: for this kata y isn't considered a vowel.
 ✅ guards:
   ✅ input is not a string throw error
   ✅ input is an empty string
-- WHEN input is "LOL"
-  - THEN expect "LL" to be returned
-- WHEN input is "losers LOL"
-  - THEN expect "lsrs LL"
-- WHEN input is "This website is for losers LOL!"
- - THEN expect "Ths wbst s fr lsrs LL!"
+✅ WHEN input is "LOL"
+  ✅ THEN expect "LL" to be returned
+✅ WHEN input is "lol"
+  ✅ THEN expect "ll" to be returned
+✅ WHEN input is "losers LOL"
+  ✅ THEN expect "lsrs LL"
+✅ WHEN input is "This website is for losers LOL!"
+ ✅ THEN expect "Ths wbst s fr lsrs LL!"
+
+# Tech Debt
+✅ only replacing capital "O"
