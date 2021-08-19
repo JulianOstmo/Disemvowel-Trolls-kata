@@ -8,4 +8,10 @@ describe('GIVEN the neutralizeThreat function', () => {
       }).toThrow();
     });
   });
+
+  describe('WHEN a empty string is passed', () => {
+    test('THEN an empty string should be returned', () => {
+      expect(neutralizeThreat('')).toBe('');
+    });
+  });
 });
